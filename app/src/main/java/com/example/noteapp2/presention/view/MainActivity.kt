@@ -13,7 +13,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -30,11 +29,9 @@ import com.example.noteapp2.MainScreen
 import com.example.noteapp2.presention.viewModel.NoteViewModel
 import com.example.noteapp2.ui.theme.NoteApp2Theme
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.lifecycle.HiltViewModel
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
       //  enableEdgeToEdge()
